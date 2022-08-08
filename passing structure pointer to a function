@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+struct ss{
+       int n;
+       float s;
+       
+   };
+   void value (struct ss *ptr)
+   {
+       cout<<ptr->n <<"  "<<ptr->s<<endl;
+   }
+int main(){
+  
+   struct ss s1 = { 67, 78.34};
+   value(&s1);
+   return 0;
+}
